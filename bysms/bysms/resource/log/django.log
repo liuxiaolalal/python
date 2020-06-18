@@ -1,0 +1,318 @@
+1108_09:23:20 Internal Server Error: /api/mgr/signin
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: by_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\apps\mgr\handlers\loginout.py", line 28, in loginReq
+    user = authenticate(username=username, password=password)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\backends.py", line 20, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\sql\compiler.py", line 1100, in execute_sql
+    cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: by_user
+1108_09:23:20 "POST /api/mgr/signin HTTP/1.1" 500 21488
+1108_09:23:46 Internal Server Error: /api/mgr/signin
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: by_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\apps\mgr\handlers\loginout.py", line 28, in loginReq
+    user = authenticate(username=username, password=password)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\backends.py", line 20, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\sql\compiler.py", line 1100, in execute_sql
+    cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: by_user
+1108_09:23:46 "POST /api/mgr/signin HTTP/1.1" 500 21488
+1108_09:24:27 Internal Server Error: /api/mgr/signin
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: by_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\apps\mgr\handlers\loginout.py", line 28, in loginReq
+    user = authenticate(username=username, password=password)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\backends.py", line 20, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\sql\compiler.py", line 1100, in execute_sql
+    cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: by_user
+1108_09:24:27 "POST /api/mgr/signin HTTP/1.1" 500 21488
+1108_09:24:37 Internal Server Error: /api/mgr/signin
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: by_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\apps\mgr\handlers\loginout.py", line 28, in loginReq
+    user = authenticate(username=username, password=password)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\backends.py", line 20, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\sql\compiler.py", line 1100, in execute_sql
+    cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: by_user
+1108_09:24:37 "POST /api/mgr/signin HTTP/1.1" 500 21488
+1108_09:27:37 Internal Server Error: /api/mgr/signin
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: by_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\apps\mgr\handlers\loginout.py", line 28, in loginReq
+    user = authenticate(username=username, password=password)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\backends.py", line 20, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\sql\compiler.py", line 1100, in execute_sql
+    cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: by_user
+1108_09:27:37 "POST /api/mgr/signin HTTP/1.1" 500 21488
+1108_09:29:35 Internal Server Error: /api/mgr/signin
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: by_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\apps\mgr\handlers\loginout.py", line 28, in loginReq
+    user = authenticate(username=username, password=password)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\backends.py", line 20, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\contrib\auth\base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\models\sql\compiler.py", line 1100, in execute_sql
+    cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "d:\tools\Portable Python-3.7.5\bysms2\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: by_user
+1108_09:29:35 "POST /api/mgr/signin HTTP/1.1" 500 21488
